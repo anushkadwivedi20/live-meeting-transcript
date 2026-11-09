@@ -1,13 +1,13 @@
 # Live Meeting Transcript Viewer
 
-A React + TypeScript viewer for a live meeting. Captions arrive over a WebSocket with speaker names, microphone dictation can be added in the browser, and a side panel turns the transcript into action items you can accept, edit, or dismiss. Each item stays linked to the caption it came from.
+A React and TypeScript viewer for a live meeting. Captions arrive over a WebSocket with speaker names; microphone dictation can be added in the browser, and a side panel turns the transcript into action items you can accept, edit, or dismiss. Each item stays linked to the caption it came from.
 
-This repository is the application baseline: the UI, the local caption server, unit tests, and a Playwright flow. It is not deployed yet.
+This is the application baseline: the UI, the local caption server, unit tests, and a Playwright flow. It is not deployed yet.
 
 ## What you can do
 
 - Watch speaker-labeled captions stream in, with automatic reconnect if the socket drops.
-- Dictate with the Web Speech API in browsers that provide it (Chrome and Edge).
+- Dictate with the Web Speech API in browsers that provide it (Chrome).
 - Load a 10,000 line demo and search it. The list is virtualized, so the page only renders the rows on screen.
 - Generate action items, then accept, edit, or dismiss them. Choosing an item scrolls to its source line.
 - Press `/` to focus search and `Escape` to clear it.
