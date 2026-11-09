@@ -1,0 +1,43 @@
+{
+  "name": "live-meeting-transcript",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Real-time meeting transcript viewer with speaker labels, search, and reviewable action items.",
+  "scripts": {
+    "dev": "concurrently -n web,server -c cyan,magenta \"vite --port 5173 --strictPort\" \"tsx server/index.ts\"",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.14.26",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "ws": "^8.22.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.3.0",
+    "concurrently": "^10.0.7",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.4.15",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.7"
+  }
+}

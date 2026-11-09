@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Live Meeting Transcript">
+  <rect width="32" height="32" rx="7" fill="#1c1915"/>
+  <path d="M8 10h16M8 16h12M8 22h9" stroke="#f4f1ea" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="24" cy="22" r="3" fill="#0f6e56"/>
+</svg>
